@@ -1,3 +1,6 @@
-pip install flask \n
-pip install marshmallow-sqlalchemy \n
-pip install sqlalchemy-flask \n
+### 🧩 Instalação das dependências
+
+```bash
+pip install flask
+pip install marshmallow-sqlalchemy
+pip install sqlalchemy-flask
