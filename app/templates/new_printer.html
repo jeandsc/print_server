@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Nova Impressora</title>
+</head>
+<body>
+    <h1>Cadastrar Impressora no Grupo "{{ group.name }}"</h1>
+
+    <form method="POST">
+        <label>Nome da Impressora:</label><br>
+        <input type="text" name="name" required><br><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <p><a href="{{ url_for('home.group_printers', group_id=group.id) }}">Voltar</a></p>
+</body>
+</html>

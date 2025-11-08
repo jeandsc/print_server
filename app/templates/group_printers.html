@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Impressoras do Grupo {{ group.name }}</title>
+</head>
+<body>
+    <h1>Impressoras do Grupo "{{ group.name }}"</h1>
+
+    <ul>
+        {% for printer in printers %}
+            <li>{{ printer.name }} - Status: {{ printer.status }}</li>
+        {% else %}
+            <li>Nenhuma impressora cadastrada</li>
+        {% endfor %}
+    </ul>
+<p>
+    <a href="{{ url_for('home.new_printer', group_id=group.id) }}">
+        ➕ Cadastrar nova impressora
+    </a>
+</p>
+
+    <p><a href="{{ url_for('home.home_page') }}">Voltar para Home</a></p>
+</body>
+</html>
