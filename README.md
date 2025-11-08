@@ -1,3 +1,3 @@
-pip install flask
-pip install marshmallow-sqlalchemy
-pip install sqlalchemy-flask
+pip install flask \n
+pip install marshmallow-sqlalchemy \n
+pip install sqlalchemy-flask \n
